@@ -10,6 +10,7 @@ const options = {
 
 if(process.env.NODE_ENV==="production"){
     options.secure = true;
+    options.sameSite = "None";
 };
 
 const signup = asyncHandler(async(req,res)=>{
