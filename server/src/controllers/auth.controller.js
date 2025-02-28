@@ -5,12 +5,8 @@ import ApiResponse from "../utils/ApiResponse.js";
 
 const options = {
     httpOnly:true,
-    sameSite:"Lax"
-};
-
-if(process.env.NODE_ENV==="production"){
-    options.secure = true;
-    options.sameSite = "None";
+    sameSite:"None",
+    secure:true
 };
 
 const signup = asyncHandler(async(req,res)=>{
