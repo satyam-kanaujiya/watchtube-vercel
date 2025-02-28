@@ -23,7 +23,7 @@ const limiter = rateLimit({
 
 const app = express();
 app.use(cors({
-    origin:"https://watchtube-vercel-frontend.vercel.app/",
+    origin:"https://watchtube-vercel-frontend.vercel.app",
     credentials:true
 }));
 app.use(helmet());
