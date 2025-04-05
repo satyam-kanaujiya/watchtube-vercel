@@ -107,7 +107,7 @@ const Description = styled.p({
 });
 
 const VideoFrame = styled.video({
-  maxWidth:"720px",
+  maxWidth:"100%",
   width:"100%",
   objectFit:"cover" 
 });

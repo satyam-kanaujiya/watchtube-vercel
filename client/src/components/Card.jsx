@@ -7,8 +7,9 @@ import noUserImg from '../assets/noProfile.jpg';
 
 
 const Container = styled.div(props=>({
-  width:"320px",
-  marginBottom:props.type==="sm"?"14px":"10px",
+  height:"35vh",
+  width:"25vw",
+  marginBottom:props.type==="sm"?"14px":"2vh",
   cursor:"pointer",
   color:props.theme.mainText,
   display:props.type==='sm' && 'flex',
@@ -16,9 +17,9 @@ const Container = styled.div(props=>({
 }));
 
 const Image = styled.img(props=>({
-    width:props.type=="sm"?"50%":"100%",
-    height:props.type=="sm"?"100px":"200px",
-    backgroundColor:"#999"
+  width:props.type=="sm"?"50%":"100%",
+  height:props.type=="sm"?"45%":"80%",
+  backgroundColor:"#999"
 }));
 
 
@@ -41,15 +42,15 @@ const Texts = styled.div({
 });
 const Title = styled.h2(props=>({
   margin:"0px",
-  fontSize:props.type=="sm"?"11px":"16px",
+  fontSize:props.type=="sm"?"100%":"100%",
   color:props.theme.mainText
 }));
 const ChannelName = styled.div(props=>({
-  fontSize:props.type=="sm"?"10px":"14px",
+  fontSize:props.type=="sm"?"80%":"100%",
   margin:"5px 0px"
 }));
 const Info = styled.div(props=>({
-  fontSize:props.type=="sm"&&"8px"
+  fontSize:props.type=="sm"?"60%":"80%"
 }));
 
 function Card({type,video}) {
